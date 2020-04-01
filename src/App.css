@@ -1,9 +1,35 @@
 *{
     outline: none !important;
     box-shadow: none !important;
+    font-family: openSans;
 }
-
 .modal-dialog{
     max-width: 1000px !important;
     max-height: 400px !important;
+}
+.modal-header{
+    border-bottom: none !important;
+}
+.table td,.table th{
+    padding: 5px !important;
+}
+.btn{
+    padding: 0.1rem 0.5rem !important;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.rbc-calendar{
+    max-height: 430px !important;
+    border: 1px solid slategray;
+    padding: 15px;
+    border-radius: 20px;
+}
+.rbc-toolbar-label{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
 }

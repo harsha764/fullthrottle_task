@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import Calender from './calenderComp'
+import moment from 'moment'
 
 class ModalComp extends React.Component {
     constructor(props) {
@@ -23,9 +24,9 @@ class ModalComp extends React.Component {
     render() {
         return (
             <div>
-                <Button color="danger" onClick={this.toggle}>{this.state.buttonLabel}</Button>
+                <Button color="primary" onClick={this.toggle}>{this.state.buttonLabel}</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.state.className}>
-                    <ModalHeader toggle={this.toggle}>{this.state.title}</ModalHeader>
+                    <ModalHeader toggle={this.toggle}><b>{this.state.title}</b></ModalHeader>
                     <ModalBody>
                         {this.state.activities.length > 0
                             ? (
@@ -33,7 +34,7 @@ class ModalComp extends React.Component {
                                     <table className="table table-bordered text-center">
                                         <thead>
                                             <tr>
-                                                <th>S.NO</th>
+                                                <th>Activity</th>
                                                 <th>Start Time</th>
                                                 <th>End Time</th>
                                             </tr>
@@ -42,9 +43,9 @@ class ModalComp extends React.Component {
                                             {this.state.activities.map((activity, index) => {
                                                 return (
                                                     <tr key={index}>
-                                                        <td>{index + 1}</td>
-                                                        <td>{activity.start_time}</td>
-                                                        <td>{activity.end_time}</td>
+                                                        <td>Activity - {index + 1}</td>
+                                                        <td>{ moment(activity.start_time, 'LLL').format('DD-MMM-YY HH:mm') }</td>
+                                                        <td>{moment(activity.end_time, 'LLL').format('DD-MMM-YY HH:mm') }</td>
                                                     </tr>)
                                             })}
                                         </tbody>

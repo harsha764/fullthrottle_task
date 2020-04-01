@@ -66,3 +66,26 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+App Description
+
+Purpose:
+	Displaying all the users and their activities respectively based on the duration.
+
+Description:
+
+    This Application gives all the list of users and their activities. All the activities will be displayed to the user along with the calendar having activities in it.
+
+Technologies Used:
+
+    Front-End: Bootstrap
+    Libraries: React Js, react-big-calendar, react-strap 
+
+Process Flow:
+•	User will lands on the `Users List` screen
+•	On clicking the view button, the modal will be displayed with all the activities of the particular user.
+•	All the activities of the user will be displayed in the calendar for the months if available.
+•	There is an option to display the data in various formats ( i.e., Day, Week, Month, Agenda)
+
+URL :
+

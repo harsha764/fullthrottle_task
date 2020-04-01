@@ -3,7 +3,6 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ModalComp from './components/model';
 
-
 class App extends React.Component {
   constructor() {
     super()
@@ -29,11 +28,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="container" >
-        <h1 className="text-center">Users Lists</h1>
+        <h1 className="text-center mt-20 mb-20">Users List</h1>
         <table className="table table-bordered text-center">
           <thead className="table-dark">
             <tr>
-              <th>Id</th>
+              <th>User Id</th>
               <th>Name</th>
               <th>TimeZone</th>
               <th>Action</th>
@@ -46,7 +45,7 @@ class App extends React.Component {
                   <td>{member.id}</td>
                   <td>{member.real_name}</td>
                   <td>{member.tz}</td>
-                  <td><ModalComp buttonLabel="View" title={member.id} activities={member.activity_periods} /></td>
+                  <td><ModalComp buttonLabel="View" title={member.real_name} activities={member.activity_periods} /></td>
                 </tr>)
               }
               )
