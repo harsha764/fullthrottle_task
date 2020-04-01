@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container" >
-        <h1 className="text-center">Users List</h1>
+        <h1 className="text-center">Users Lists</h1>
         <table className="table table-bordered text-center">
           <thead className="table-dark">
             <tr>
