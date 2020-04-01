@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,EACI,sBAAwB,CACxB,yBACJ,CAEA,cACI,0BAA4B,CAC5B,0BACJ","file":"main.aad42995.chunk.css","sourcesContent":["*{\r\n    outline: none !important;\r\n    box-shadow: none !important;\r\n}\r\n\r\n.modal-dialog{\r\n    max-width: 1000px !important;\r\n    max-height: 400px !important;\r\n}"]}
